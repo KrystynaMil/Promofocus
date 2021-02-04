@@ -7,7 +7,7 @@
 
 'use strict';
 import { pomoDoroHandler, longBreakHandler, shortBreakHandler, timeHandler, changeActive } from '../handlers/time-handeler.js';
-
+import { changeBg } from '../handlers/background.js';
 
 const startBtn = document.getElementById('start-btn');
 const promoDoro = document.getElementById('pomodoro');
