@@ -87,3 +87,20 @@ JavaScript Promofocus
 
 
 ---
+
+## 3. Background colors
+
+**As a user I would like be able to see different background colors for long break and short break**
+
+
+### REPO
+
+- This user story is developed on branch `background`.
+- This branch is merged to `master` branch after completion.
+
+### background.js
+
+- Create functions to change background colors 
+
+
+---
