@@ -35,10 +35,12 @@ export const timeHandler = (event) => {
 				event.target.innerHTML = 'STOP';
 				newCount.start();
 				ButtonClickSound.play();
+				
 			} else {
 				event.target.innerHTML = 'START';
 				newCount.pause();
 				ButtonClickSound.play();
+				
 			}
 		}
 	}
