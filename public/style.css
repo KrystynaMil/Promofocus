@@ -1,33 +1,45 @@
-@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 
-  
+
+@font-face {
+  font-family: 'ArialRounded';
+  font-display: swap;
+  src: url('/fonts/ArialRounded/Arial_Rounded_MT.ttf')
+    format('truetype');
+}
+@font-face {
+  font-family: 'ArialRounded';
+  font-display: swap;
+  src: url('/fonts/ArialRounded/Arial-Rounded-MT-Bold.ttf')
+    format('truetype');
+  font-weight: bold;
+}
   body {
     margin: 0;
-    font-family: 'Varela Round', sans-serif;
+    font-family: 'ArialRounded', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
     font-weight: 300;
     -webkit-tap-highlight-color: transparent;
     position: relative;
 }
 
-  
-  button,
-  input,
-  textarea {
-    font-family: 'Varela Round', sans-serif;
-  }
-  
-  input:focus,
+button,
+input,
+textarea {
+  font-family: 'ArialRounded';
+}
+input:focus,
   button:focus,
   textarea:focus {
     outline: none;
   }
   
+ 
+  
   h1,
   h2 {
-    margin-top: 34px;
-    display: inline-block;
+    
+    
     padding-bottom: 4px;
-    margin-bottom: 4px;
+   
     line-height: 1.4em;
   }
   
@@ -41,9 +53,21 @@
   }
   
   h1 {
-    font-size: 34px;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    
   }
   
+  h2 {
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+  }
   @media only screen and (max-width: 680px) {
     h1,
     h2 {
@@ -58,10 +82,9 @@
   }
   
   p {
-    font-size: 18px;
-    line-height: 1.6em;
     color: hsl(357, 12%, 42%);
-  }
+    line-height: 1.6em;
+    }
   
   @media only screen and (max-width: 680px) {
     p,
@@ -89,11 +112,11 @@
   
   .features__list li::before {
     color: hsl(357, 74%, 67%);
-    content: '\2022'; /* Add content: \2022 is the CSS Code/unicode for a bullet */
-    font-weight: bold; /* If you want it to be bold */
-    display: inline-block; /* Needed to add space between the bullet and the text */
-    width: 1em; /* Also needed for space (tweak if needed) */
-    margin-left: -1em; /* Also needed for space (tweak if needed) */
+    content: '\2022';
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em; 
   }
   
   a {
@@ -105,7 +128,7 @@
   .catchcopy__header:after {
     content: ''; /* This is necessary for the pseudo element to work. */
     display: block;
-    /* margin: 0 auto; */
+    
     width: 24px;
     padding-top: 8px;
     border-bottom: 4px solid #f05b56;
@@ -184,8 +207,8 @@
   
   .heroimage__title {
     display: block;
-    margin-top: 50px;
-    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-bottom: 0px;
   }
   
   @media only screen and (max-width: 680px) {
@@ -197,14 +220,14 @@
   
 
   .wrapper {
-    background-color: rgb(219, 82, 77);
-    min-height: 489px;
+      background-color: rgb(219, 82, 77);
+    min-height: 821px;
     width: 100%;
     color: white;
     transition: background-color 0.5s ease-in-out 0s;
     padding-bottom: 12px;
     box-sizing: border-box;
-}
+  }
 
 .navbar-wrapper {
     background-color: inherit;
@@ -219,7 +242,6 @@
 
 .logo {
     display: inline-block;
-    color: white;
     margin: 0px;
     padding: 10px 0px;
     font-size: 20px;
@@ -322,19 +344,19 @@
 }
 
 .time-btn-active {
-    border: none;
-    margin: 0px;
-    border-radius: 4px;
-    font-family: 'Varela Round', sans-serif;
-    font-size: 18px;
-    padding: 2px 12px;
-    height: 28px;
-    cursor: pointer;
-    background: none rgba(0, 0, 0, 0.15);
-    box-shadow: none;
-    color: white;
-    opacity: 1;
-    font-weight: 400;
+  border: none;
+  margin: 0px;
+  border-radius: 4px;
+  font-family: ArialRounded;
+  font-size: 16px;
+  padding: 2px 12px;
+  height: 28px;
+  cursor: pointer;
+  background: none rgba(0, 0, 0, 0.15);
+  box-shadow: none;
+  color: white;
+  opacity: 1;
+  font-weight: bold;
 }
 
 .time-btn {
@@ -366,15 +388,16 @@
     padding: 0px 12px;
     border-radius: 4px;
     box-shadow: rgb(235, 235, 235) 0px 6px 0px;
-    font-family: 'Varela Round', sans-serif;
+    font-family: ArialRounded;
     font-size: 22px;
     height: 55px;
-    color: rgb(240, 91, 86);
+    color: rgb(219, 82, 77);
     font-weight: bold;
     width: 200px;
     background-color: white;
     transition: color 0.5s ease-in-out 0s;
 }
+
 
 .active-work {
     font-size: 13px;
@@ -818,4 +841,24 @@ textarea{
   }
   
   
+  @media only screen and (max-width: 680px) {
+    .heroimage__title {
+      margin-top: 20px;
+      margin-bottom: 0px;
+    }
+    .header__brand_title {
+      font-size: 20px;
+    }
+    .header__brand_icon {
+      width: 20px;
+    }
+  }
   
+  .heroimage__img {
+    width: 220px;
+  }
+  
+  .adsection__wrapper {
+    display: flex;
+    justify-content: space-around;
+  }
